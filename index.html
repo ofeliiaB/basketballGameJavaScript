@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML5 CANVAS TEMPLATE</title>
+
+		<link href="css/style.css" type="text/css" rel="stylesheet" />
+
+		<script src="js/jquery-3.3.1.min.js"></script>
+
+		<audio src="media/ballBounce.mp3" id="ballBounce"></audio>
+
+	</head>
+	<body>
+
+
+<div id="wrap" width=800px height=700px>
+
+<div id="menu">
+
+	<div id="main">
+		<h1>Basketball Game</h1>
+		<ul>
+			<li><a href="javascript:void(0)" class="button play">Start Game</a></li>
+			<li><a href="javascript:void(0)" class="button instructions">Instructions</a></li>
+		</ul>
+	</div>
+
+
+</div>
+
+	<div id="instructions" width=800px height=700px>
+		<p id="instructionsText">
+		<b>	Welcome to the Basketball Game! </b>
+		 </p>
+		  <br>
+		 <p id="instructionsText">
+	Please, use the arrow keys on your keyboard to control the player movement.
+			</p>
+		 <br>
+			<p id="instructionsText">
+	 The goal of the game is to achive score of 7 !
+			 </p>
+			 <br>
+
+			 <p id="instructionsText">
+		Good Luck !
+				</p>
+
+		<a href="javascript:void(0)" class="button back">Back</a>
+	</div>
+
+
+
+
+<div id='canvasDiv'>
+	<canvas id="myGameCanvas" style="display: none;" width=800px height=700px></canvas>
+
+</div>
+
+<div id='game-over'>
+	<h2>Your Score is <span id="score"></span>!</h2>
+	<a href="javascript:void(0)" class="button restart">Play again?</a>
+</div>
+
+
+</div>
+
+
+	<script src="js/script.js"></script>
+	</body>
+</html>
